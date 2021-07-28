@@ -1,0 +1,1040 @@
+﻿/* Custom Alert Box */
+#Alert 
+{
+    position: absolute;
+    width: 35%;
+    max-width: 35%;
+    height: 15%;
+    max-height: 15%;
+    border:none;
+    background-color: #C7871A;
+    transform: scale(0);
+    right: 35%;
+    top:0%;
+    z-index:5;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: background-color .2s ease;
+}
+#Alert:hover 
+{
+    background-color: #E69C1E;
+}
+#AlertT 
+{
+    font-size:x-large;
+    font-family:'Power Red and Blue';
+    font-weight:bold;
+    margin-top:5px;
+    margin-left:5px;
+}
+#NameBox 
+{
+    position:absolute;
+    width:50%;
+    max-width:50%;
+    height:11%;
+    max-height:11%;
+    right: 26%;
+    top:40%;
+    background-color:dodgerblue;
+    text-align:center;
+    z-index:4;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+#NameC 
+{
+    width:30%;
+    max-width:30%;
+    margin-top: 45px;
+    font-family:'Power Red and Blue';
+    font-size:large;
+    font-weight:bold;
+    background-color:lightgray;
+    outline:none;
+    border:none;
+    z-index:4;
+}
+#Tut 
+{
+    position:absolute;
+    width:25%;
+    max-width:25%;
+    height:10%;
+    max-height:10%;
+    background-color: #02A0D4;
+    right:40%;
+    outline: none;
+    border: none;
+    font-family:'Power Red and Blue';
+    font-size:xx-large;
+    font-weight:bold;
+    bottom: 10%;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: background-color .2s ease;
+}
+#Tut:hover 
+{
+    background-color:#0BBDD9;
+}
+#Tutorial 
+{
+    position:absolute;
+    width:80%;
+    max-width:80%;
+    height:80%;
+    max-height:80%;
+    top:10%;
+    right:10%;
+    background-color:#2D57C2;
+    transform: scale(0);
+    display:inline-block;
+    overflow-y:auto;
+    text-align:left;
+    z-index:4;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+.TutorialText 
+{
+    font-size: x-large;
+    font-family:'Power Red and Blue';
+    font-weight:bold;
+    color:black;
+    margin-left: 10px;
+}
+
+/* Level Select Elements */
+.LevelSelect 
+{
+    position: relative;
+    width: 20%;
+    max-width: 20%;
+    height: 110%;
+    max-height: 110%;
+    margin-left:160px;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Power Red and Blue';
+    background-color: rgb(0, 148, 255,.02);
+    outline: none;
+    border: none;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+.LevelSelect:hover:enabled 
+{
+    background-color: rgb(0, 148, 255,.1);
+    box-shadow: -9px 0 0 0 black,
+                 9px 0 0 0 black,
+                 0 -9px 0 0 black,
+                 0 9px 0 0 black;
+
+
+    -webkit-box-shadow: -9px 0 0 0 black,
+                 9px 0 0 0 black,
+                 0 -9px 0 0 black,
+                 0 9px 0 0 black;
+
+    -moz-box-shadow: -9px 0 0 0 black,
+                 9px 0 0 0 black,
+                 0 -9px 0 0 black,
+                 0 9px 0 0 black;
+}
+.StatBox 
+{
+    position:absolute;
+    width:25%;
+    max-width: 25%;
+    height: 40%; 
+    max-height:40%;
+    bottom:5%;
+    left:5%;
+    display:inline-table;
+    background-color: rgb(0, 148, 255,.1);
+
+    box-shadow: -7px 0 0 0 black,
+                 7px 0 0 0 black,
+                 0 -7px 0 0 black,
+                 0 7px 0 0 black;
+
+
+    -webkit-box-shadow: -7px 0 0 0 black,
+                 7px 0 0 0 black,
+                 0 -7px 0 0 black,
+                 0 7px 0 0 black;
+
+    -moz-box-shadow: -7px 0 0 0 black,
+                 7px 0 0 0 black,
+                 0 -7px 0 0 black,
+                 0 7px 0 0 black;
+}
+.SelectMenu 
+{
+    position:absolute;
+    width:25%;
+    max-width: 25%;
+    height: 30%; 
+    max-height:30%;
+    padding-left: 15px;
+    right:10%;
+    bottom:5%;
+    display:inline-table;
+    text-align:center;
+    background-color: #530CF2;
+
+    box-shadow: -7px 0 0 0 black,
+                 7px 0 0 0 black,
+                 0 -7px 0 0 black,
+                 0 7px 0 0 black;
+
+
+    -webkit-box-shadow: -7px 0 0 0 black,
+                 7px 0 0 0 black,
+                 0 -7px 0 0 black,
+                 0 7px 0 0 black;
+
+    -moz-box-shadow: -7px 0 0 0 black,
+                 7px 0 0 0 black,
+                 0 -7px 0 0 black,
+                 0 7px 0 0 black;
+}
+.SelectButton 
+{
+    position: relative;
+    width: 80%;
+    max-width: 80%;
+    height: 30%;
+    max-height: 30%;
+    border:none;
+    outline:none;
+    margin-top:40px;
+    font-family: 'Power Red and Blue';
+    font-size:2vw;
+    font-weight:bold;
+    text-align:center;
+    background-color: #02A0D4;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: color .2s, box-shadow .2s ease;
+}
+.SelectButton:hover 
+{
+    color:white;
+    box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+    -webkit-box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+    -moz-box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+}
+.DeckMaker 
+{
+    position: absolute;
+    width: 70%;
+    max-width: 70%;
+    height: 80%;
+    max-height: 80%;
+    top:10%;
+    right:15%;
+    display: inline-block;
+    background: #3909AB;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    z-index: 3;
+}
+.QuitMaker 
+{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    top:-2%;
+    font-family: 'Power Red and Blue';
+    font-weight:bold;
+    font-size:2vw;
+    text-align:center;
+    background-color: #0970AD;
+    outline: none;
+    border: none;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: color .2s, box-shadow .2s ease;
+}
+.QuitMaker:hover 
+{
+    color:white;
+    box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+    -webkit-box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+    -moz-box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+}
+.CHeader {
+    position: absolute;
+    background: white;
+    width: 30%;
+    max-width: 30%;
+    height: 20%;
+    max-height: 20%;
+    right: 39%;
+    top: 0%;
+    background-color: rgb(0, 148, 255,.1);
+    text-align: center;
+    /* border */
+    box-shadow: -10px 0 0 0 black, 10px 0 0 0 black, 0 -10px 0 0 black, 0 10px 0 0 black;
+    -webkit-box-shadow: -10px 0 0 0 black, 10px 0 0 0 black, 0 -10px 0 0 black, 0 10px 0 0 black;
+    -moz-box-shadow: -10px 0 0 0 black, 10px 0 0 0 black, 0 -10px 0 0 black, 0 10px 0 0 black;
+}
+.CardSelect 
+{
+    position:relative;
+    width:100%;
+    max-width:100%;
+    font-size:1.5vw;
+    margin-left:20px;
+    margin-top: 30px;
+    font-family:'Power Red and Blue';
+    font-weight:bold;
+    background-color: sandybrown;
+    outline:none;
+    border:none;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+.DescBox 
+{
+    position:absolute;
+    width:40%;
+    max-width:40%;
+    height:80%;
+    max-height:80%;
+    right: 5%;
+    top:10%;
+    display:inline-block;
+    background: #582FFA;
+    box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+    -webkit-box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+    -moz-box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+}
+.MiniDBox 
+{
+    position:relative;
+    width:100%;
+    max-width:100%;
+    height: calc(100% - 64%); 
+    background-color:#1262F5;
+    overflow-y:auto;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    visibility:hidden;
+}
+.MiniDText 
+{
+    font-size: 1.7vw;
+    font-family: 'Power Red and Blue';
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.MovePoolBox 
+{
+    position: absolute;
+    width:50%;
+    max-width:50%;
+    height:35%;
+    max-height:35%;
+    left:2%;
+    bottom:30%;
+    display:inline-block;
+    white-space:normal;
+    overflow-y:auto;
+    text-align:center;
+    background: #006CC4;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+.MovePoolButt 
+{
+    position:relative;
+    width:95%;
+    max-width:95%;
+    height:10%;
+    max-height:10%;
+    font-size: 1.1vw;
+    margin-top:20px;
+    font-family:'Power Red and Blue';
+    display:inline-block;
+    font-weight:bold;
+    outline:none;
+    border:none;
+    text-align:center;
+    color:white;
+    background-color: #3909AB; 
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: color .2s, background-color .2s ease
+}
+.MovePoolButt:hover 
+{
+    color: blue;
+    background-color: #3B49E0;
+}
+#Add 
+{
+    position: absolute;
+    width:25%;
+    max-width:25%;
+    height:15%;
+    max-height:15%;
+    bottom:10%;
+    left: 2%;
+    background-color: rgb(0, 148, 255,.1);
+    font-size: 2rem;
+    font-family:'Power Red and Blue';
+    font-weight:bold;
+    border:none;
+    outline:none;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: color .2s, background .2s ease;
+}
+#Add:hover 
+{
+    background: rgb(0, 148, 255,.5);
+    color:deepskyblue;
+}
+#Remove 
+{
+    position: absolute;
+    width:25%;
+    max-width:25%;
+    height:15%;
+    max-height:15%;
+    bottom:10%;
+    left: 28%;
+    background-color: rgb(0, 148, 255,.1);
+    font-size: 2rem;
+    font-family:'Power Red and Blue';
+    font-weight:bold;
+    border:none;
+    outline:none;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: color .2s, background .2s ease;
+}
+#Remove:hover 
+{
+    background: rgb(0, 148, 255,.5);
+    color:deepskyblue;
+}
+/* Pop Up (#Info) && Stat Box */
+#Info 
+{
+    position: absolute;
+    width: 17%;
+    max-width: 17%;
+    height: 44%;
+    max-height: 44%;
+    right: -20%; /* -20% */
+    top: 20%;
+    display: inline-block;
+    background-color: #582FFA;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+#SMinfo 
+{
+    position:relative;
+    width:92%;
+    max-width:92%;
+    height:45%;
+    max-height:45%;
+    margin-left: 15px;
+    background-color: #3B49E0;
+    overflow-y:auto;
+    overflow-wrap:break-word;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+#ZoomSMinfo 
+{
+    position:absolute;
+    width:40%;
+    max-width:40%;
+    height:40%;
+    max-height:40%;
+    background-color: #5368FC;
+    overflow-y:auto;
+    overflow-wrap:break-word;
+    display:inline-table;
+    top:30%;
+    right:30%;
+    z-index:3;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+.OneLetterBox 
+{
+    position: absolute;
+    width: 30%;
+    max-width: 30%;
+    z-index: 3;
+    font-size: 3vw;
+    text-align: center;
+    color: black;
+    background-color: #582FFA;
+    font-family: 'Power Red and Blue';
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: color .2s, box-shadow .2s ease;
+    border:none;
+    outline:none;
+}
+.OneLetterBox:hover 
+{
+    color:white;
+    box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+    -webkit-box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+    -moz-box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+}
+/* Loading Levels + Panel Animations */
+.EnableClicks { pointer-events:none;}
+.FadeI { animation: FadeIn 1s linear}
+.FadeO { animation: FadeOut 1s linear}
+.EventPopup {animation: EPop .5s linear forwards}
+.EventLeave {animation: ELeave .5s linear forwards}
+@keyframes FadeIn 
+{
+    from {background-color: rgba(0,0,0,0) }
+    to {background-color: rgba(0,0,0,1)}
+}
+@keyframes FadeOut 
+{
+    from {background-color: rgba(0,0,0,1)}
+    to {background-color: rgba(0,0,0,0) }
+}
+@keyframes EPop 
+{
+    from {background-color: rgba(0,0,0,0)}
+    to {background-color: rgba(0,0,0,.5)}
+}
+@keyframes ELeave 
+{
+    from {background-color: rgba(0,0,0,.5)}
+    to {background-color: rgba(0,0,0,0)}
+}
+/* End Of Level Select*/
+
+/* Animations for Pop up box movement */
+.Sin 
+{
+    animation: SIn .3s ease forwards;
+}
+.Sout 
+{
+    animation: SOut .3s ease forwards;
+}
+@keyframes SIn 
+{
+    from {transform: translateX(0%)}
+    to {transform: translateX(-116%)}
+}
+@keyframes SOut 
+{
+    from {transform: translateX(-116%)}
+    to {transform: translateX(0)}
+}
+
+/* Text && Other Gameplay stuff */
+.InfoText 
+{
+    font-size: x-large;
+    font-family: 'Power Red and Blue';
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.Text 
+{
+    font-size: 4vw;
+    font-family: 'Power Red and Blue';
+}
+.GameplayButton 
+{
+    position:absolute;
+    width:15%; 
+    max-width:15%;
+    height:100%;
+    max-height:100%;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Power Red and Blue';
+    background-color: rgb(0, 148, 255,.02);
+    outline: none;
+    border: none;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+}
+.GameplayButton:hover 
+{
+        background-color: rgb(0, 148, 255,.1);
+        box-shadow: -9px 0 0 0 black, 9px 0 0 0 black, 0 -9px 0 0 black, 0 9px 0 0 black;
+        -webkit-box-shadow: -9px 0 0 0 black, 9px 0 0 0 black, 0 -9px 0 0 black, 0 9px 0 0 black;
+        -moz-box-shadow: -9px 0 0 0 black, 9px 0 0 0 black, 0 -9px 0 0 black, 0 9px 0 0 black;
+}
+.Move 
+{
+    position:relative;
+    width:20%; 
+    max-width:20%;
+    height:100%;
+    max-height:100%;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    margin-left:15px;
+    font-family: 'Power Red and Blue';
+    background-color: rgb(0, 148, 255,.02);
+    overflow-wrap:break-word;
+    outline: none;
+    border: none;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: transform .2s ease;
+}
+.Move:hover 
+{
+    transform:translateY(-20%);
+}
+.MoveMenu 
+{
+    position:absolute;
+    width:60%;
+    max-width:60%;
+    height:20%;
+    max-height:20%;
+    background-color: rgba(24,173,224,.3);
+    bottom:1%; 
+    left:20%;
+    transform: scale(0);
+    display:inline-flex;
+    /* border */
+    box-shadow: -10px 0 0 0 black, 10px 0 0 0 black, 0 -10px 0 0 black, 0 10px 0 0 black;
+    -webkit-box-shadow: -10px 0 0 0 black, 10px 0 0 0 black, 0 -10px 0 0 black, 0 10px 0 0 black;
+    -moz-box-shadow: -10px 0 0 0 black, 10px 0 0 0 black, 0 -10px 0 0 black, 0 10px 0 0 black;
+}
+.ConfirmAct 
+{
+    position:absolute;
+    width:10%; 
+    max-width:10%;
+    height:30%;
+    max-height:30%;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Power Red and Blue';
+    background-color: rgba(64,255,189,1);
+    outline: none;
+    border: none;
+    top:15%;
+    left:-20%;
+    /* border */
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    border-radius:100%;
+}
+.ConfirmAct:hover 
+{
+    background-color: #2EE8DC
+}
+button:disabled 
+{
+    display:none;
+}
+fieldset:disabled 
+{
+    display:none;
+}
+#ASpell 
+{
+    position:absolute;
+    width:15%;
+    max-width:15%;
+    height: 20%;
+    max-height:20%;
+    right:0%;
+    bottom:1%;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Power Red and Blue';
+    background-color:darkred;
+    box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -webkit-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    -moz-box-shadow: -7px 0 0 0 black, 7px 0 0 0 black, 0 -7px 0 0 black, 0 7px 0 0 black;
+    transition: color .2s, box-shadow .2s ease;
+}
+#ASpell:hover 
+{
+     color:white;
+    box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+    -webkit-box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+    -moz-box-shadow: -7px 0 0 0 white, 7px 0 0 0 white, 0 -7px 0 0 white, 0 7px 0 0 white;
+}
+/* Gameplay Textbox */
+#TextBox {
+    position: absolute;
+    width: 85%;
+    max-width: 85%;
+    height: 15%;
+    max-height: 15%;
+    background-color: #393E46;
+    bottom: -20%;
+    left: 7.4%;
+    color: white;
+    box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+    -webkit-box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+    -moz-box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+}
+
+.EssentialStats 
+{
+    position:absolute;
+    width:20%;
+    max-width:20%;
+    height:20%;
+    max-height:20%;
+    right:1%;
+    top:0%;
+    background-color: steelblue;
+    box-shadow: -5px 0 0 0 black, 5px 0 0 0 black, 0 -5px 0 0 black, 0 5px 0 0 black;
+    -webkit-box-shadow: -5px 0 0 0 black, 5px 0 0 0 black, 0 -5px 0 0 black, 0 5px 0 0 black;
+    -moz-box-shadow: -5px 0 0 0 black, 5px 0 0 0 black, 0 -5px 0 0 black, 0 5px 0 0 black;
+    font-family: 'Power Red and Blue';
+    font-size: 1.8vw;
+    font-weight:bold;
+    text-align: center;
+    transition: color .2s, box-shadow .2s ease;
+}
+.EssentialStats:hover 
+{
+    color:white;
+    box-shadow: -5px 0 0 0 white, 5px 0 0 0 white, 0 -5px 0 0 white, 0 5px 0 0 white;
+    -webkit-box-shadow: -5px 0 0 0 white, 5px 0 0 0 white, 0 -5px 0 0 white, 0 5px 0 0 white;
+    -moz-box-shadow: -5px 0 0 0 white, 5px 0 0 0 white, 0 -5px 0 0 white, 0 5px 0 0 white;
+}
+/* Animation for confirm action! && Move Button Hover*/
+.SpinIn { animation: SPI .3s ease forwards }
+.SpinOut { animation: SPO .3s ease forwards }
+@keyframes SPI 
+{
+    from {transform:rotateZ(0); left:-20%;}
+    to {transform:rotateZ(35deg); left:-1.5%;}
+}
+@keyframes SPO 
+{
+    from {transform:rotateZ(35deg); left:-1.5%;}
+    to {transform:rotateZ(0); left:-20%;}
+}
+
+/* Health Bars */
+.BossHPBAR 
+{
+    position: absolute;
+    top: 120%;
+    left: 17.8%;
+    width: 61%;
+    max-width: 61%;
+    height: 30%;
+    max-height: 30%;
+    border: 4px solid black;
+    box-shadow: -6px 0 0 0 black, 6px 0 0 0 black, 0 -6px 0 0 black, 0 6px 0 0 black;
+    -webkit-box-shadow: -6px 0 0 0 black, 6px 0 0 0 black, 0 -6px 0 0 black, 0 6px 0 0 black;
+    -moz-box-shadow: -6px 0 0 0 black, 6px 0 0 0 black, 0 -6px 0 0 black, 0 6px 0 0 black;
+    opacity: 1;
+}
+.BossHPBAR::-webkit-progress-value { background-color:darkred;}
+#PBox 
+{
+    position:absolute;
+    bottom:30%;
+    left:0%;
+    width:25%;
+    max-width:25%;
+    height:20%;
+    max-height:20%;
+    background-color: #393E46;
+    box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+    -webkit-box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+    -moz-box-shadow: -8px 0 0 0 black, 8px 0 0 0 black, 0 -8px 0 0 black, 0 8px 0 0 black;
+}
+#PHP 
+{
+    position:relative;
+    width:60%;
+    max-width:60%;
+    height:20%;
+    max-height:20%;
+    float: right;
+    margin-right: 20px;
+    margin-top:10px;
+    border:4px solid black;
+    box-shadow: -6px 0 0 0 black, 6px 0 0 0 black, 0 -6px 0 0 black, 0 6px 0 0 black;
+    -webkit-box-shadow: -6px 0 0 0 black, 6px 0 0 0 black, 0 -6px 0 0 black, 0 6px 0 0 black;
+    -moz-box-shadow: -6px 0 0 0 black, 6px 0 0 0 black, 0 -6px 0 0 black, 0 6px 0 0 black;
+}
+#downhp 
+{
+    position:relative;
+    margin-top:100px;
+    margin-top:100px;
+    margin-left:245px;
+}
+
+
+/* Most Important Animations (Smoothly go out, Smoothly go in) also colored info */
+.WOOUT 
+{
+    animation: WooOut .3s ease forwards;
+}
+.WOOIN 
+{
+    animation: WooIn .3s ease forwards;
+}
+@keyframes WooIn 
+{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+@keyframes WooOut 
+{
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+
+.GOOUT {animation: GOO .3s ease forwards}
+.GOIN {animation: GOI .3s ease forwards}
+@keyframes GOO 
+{
+    from {bottom: 0%}
+    to {bottom: -20%}
+}
+@keyframes GOI 
+{
+    from {bottom: -20%}
+    to {bottom: 0%}
+}
+
+/* Scroll Bar Customization */
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track 
+{
+    background: rgba(0, 148, 255,.2)
+}
+::-webkit-scrollbar-thumb 
+{
+    background: gray;
+}
+::-webkit-scrollbar-thumb:hover 
+{
+    background: darkgray
+}
+/* random level select disabled thing */
+.LevelSelect:disabled 
+{
+    display: block;
+    box-shadow: -7px 0 0 0 darkgray, 7px 0 0 0 darkgray, 0 -7px 0 0 darkgray, 0 7px 0 0 darkgray;
+    -webkit-box-shadow: -7px 0 0 0 darkgray, 7px 0 0 0 darkgray, 0 -7px 0 0 darkgray, 0 7px 0 0 darkgray;
+    -moz-box-shadow: -7px 0 0 0 darkgray, 7px 0 0 0 darkgray, 0 -7px 0 0 darkgray, 0 7px 0 0 darkgray;
+}
+#armor 
+{
+     right:25%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 900px) and (max-height: 1080px)
+{
+    .StatBox 
+    {
+        height: 40%;
+        max-height: 40%;
+    }
+    .LevelSelect 
+    {
+        width:25%;
+        max-width:25%;
+        margin-left:45px;
+        font-size:large;
+        font-weight:bold;
+    }
+    .PopUp 
+    {
+        right: -50%;
+        width:20%;
+        max-width:20%;
+        height:40%;
+        max-height:40%;
+    }
+    .TutorialText 
+    {
+        font-size: large;
+    }
+    @keyframes SIn 
+    {
+        0% {opacity:1;}
+        100% {right: 0%; opacity:1;}
+    }
+    @keyframes SOut 
+    {
+         0% {right: 0%; opacity: 1;}
+         99% {opacity: 1; right: -50%}
+         100% {right: -50%; opacity:0;}
+    }
+
+    /* Change Width for description of tactic */
+    #Description 
+    {
+        width:90%;
+        max-width:90%;
+        height:43%;
+        max-height:43%;
+    }
+    
+    /* Combat Navigation */
+    .Move 
+    {
+        width:15%; 
+        max-width:15%;
+    }
+    .MoveMenu
+    {
+        width:80%;
+        max-width:80%;
+        right:2%;
+    }
+
+    .ConfirmAct 
+    {
+        width:15%;
+        max-width:15%;
+        height: 25%;
+        max-height:25%;
+    }
+    #ASpell 
+    {
+        left:0%;
+        top:0%;
+    }
+    .CardSelect 
+    {
+        width:100%;
+        max-width:100%;
+        font-size:2.4vw;
+    }
+    .MiniDText 
+    {
+        font-size: 2.8vw;
+    }
+    .MiniDBox 
+    {
+        height: calc(100% - 49%);
+    }
+    .MovePoolButt 
+    {
+        font-size: 1.8vw;
+    }
+    .SelectButton 
+    {
+        margin-right:10px;
+    }
+    .SelectMenu 
+    {
+        right:5%;
+        height:40%;
+        max-height:40%;
+    }
+    #NameC 
+    {
+        width:40%;
+        max-width:40%;
+        margin-top:35px;
+    }
+    #Tut 
+    {
+        right:38%;
+    }
+    .Move 
+    {
+        margin-left:15px;
+    }
+    .ConfirmAct 
+    {
+        top:20%;
+    }
+    #downhp 
+    {
+       position:absolute;
+       right:26%;
+       bottom:2%;
+    }
+    #PBox 
+    {
+        width:40%;
+        max-width:40%;
+    }
+
+    /* Info Box Stuff */
+    #Info {
+        width: 25%;
+        max-width: 25%;
+        right: -30%;
+    }
+    #SMinfo 
+    {
+        margin-left: 10px;
+        margin-top:40px;
+    }
+    #IBoxText { font-size: 2vw;}
+    #fuckingInfo 
+    {
+        transform: translate(0px,10px);
+        font-size:5vw;
+        font-weight:bolder;
+        width:40%;
+        max-width:40%;
+    }
+    #getout 
+    {
+        transform:translateY(30px);
+    }
+    .InfoText 
+    {
+        font-size:2.5vw;
+        font-weight:bolder;
+    }
+}
